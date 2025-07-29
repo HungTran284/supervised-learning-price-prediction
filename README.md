@@ -1,6 +1,6 @@
 # Phân tích dữ liệu và xây dựng các mô hình học máy với Python
 
-Repository này chứa phần triển khai của mình về một số mô hình học máy có giám sát (supervised learning) để phân tích và dự đoán dữ liệu. Các mô hình được xây dựng trên các bộ dữ liệu thực tế, tập trung vào việc so sánh hiệu suất và tối ưu hóa tham số.
+Project về việc xây dựng một số mô hình học máy có giám sát (supervised learning) để phân tích và dự đoán giá. Các mô hình được xây dựng trên các bộ dữ liệu trên Kaggle, tập trung vào việc xử lý dữ liệu, so sánh hiệu suất mô hình và tối ưu hóa tham số.
 
 ## Mô hình và bài toán đã thực hiện
 
