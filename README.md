@@ -1,21 +1,27 @@
-# Machine Learning Models with R/Python
+# Phân tích dữ liệu và xây dựng các mô hình học máy với Python
 
-This repository contains my implementation of several supervised machine learning models for data analysis and prediction tasks. The models were built using real datasets, with focus on performance comparison and tuning.
+Repository này chứa phần triển khai của mình về một số mô hình học máy có giám sát (supervised learning) để phân tích và dự đoán dữ liệu. Các mô hình được xây dựng trên các bộ dữ liệu thực tế, tập trung vào việc so sánh hiệu suất và tối ưu hóa tham số.
 
-## Models Implemented
+## Mô hình và bài toán đã thực hiện
 
-- **Linear Regression**: Applied to a regression problem to predict continuous target variables using one or more independent variables.
-- **Decision Tree**: Used for both classification and regression, including pruning and hyperparameter tuning with Grid Search and Random Search.
-- **Random Forest**: An ensemble learning method combining multiple decision trees to improve accuracy and reduce overfitting.
+### Linear Regression
+- **Bài toán**: Dự đoán giá xe bán lại (resale car price)
+- **Mô tả**: Sử dụng mô hình hồi quy tuyến tính đơn biến và đa biến để dự đoán giá xe dựa trên các yếu tố như: năm sản xuất, loại nhiên liệu, hộp số, số km đã đi (mileage),...
+- **Kết quả**: Mô hình giúp xác định các yếu tố ảnh hưởng lớn nhất đến giá xe và đưa ra định giá chính xác hơn cho từng loại xe.
 
-## Techniques Used
+### Decision Tree & Random Forest
+- **Bài toán**: Dự đoán giá phòng nghỉ ở Singapore
+- **Mô tả**:
+  - Áp dụng Decision Tree & Random Forest để dự đoán giá thuê phòng Airbnb dựa trên các đặc trưng như: loại phòng, vị trí (latitude/longitude), số ngày khả dụng, v.v.
+  - Thực hiện huấn luyện mô hình qua nhiều giai đoạn: trước & sau xử lý outlier, tối ưu tham số bằng Grid Search và Random Search.
+- **Kết quả**: So sánh độ chính xác và sai số giữa các mô hình, Random Forest cho kết quả tốt nhất sau khi tối ưu.
+## Kỹ thuật sử dụng
 
-- Data preprocessing: handling missing values, outliers, encoding, scaling
-- Model evaluation: RMSE, R², confusion matrix, accuracy, precision, recall
-- Model tuning: GridSearchCV, RandomizedSearchCV
-- k-Fold Cross Validation
+- Tiền xử lý dữ liệu: xử lý missing values, outliers, encoding, scaling
+- Đánh giá mô hình: RMSE, R², confusion matrix, accuracy, precision, recall
+- Tối ưu mô hình: GridSearchCV, RandomizedSearchCV
+- Cross-validation: sử dụng kỹ thuật k-Fold
 
-## Tools and Libraries
+## Công cụ và thư viện
 
-- R: `ggplot2`, `caret`, `randomForest`
 - Python: `scikit-learn`, `pandas`, `matplotlib`, `seaborn`
